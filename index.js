@@ -2,7 +2,7 @@ import express from 'express'
 import axios from 'axios';
 import bodyParser from 'body-parser';
 import { getjokes,getjoke,createJoke } from './database.js';
-const port=3000;
+const port=process.env.PORT;
 const app=express();
 const API_URL="https://v2.jokeapi.dev/joke/";
 
